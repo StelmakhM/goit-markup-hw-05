@@ -774,7 +774,7 @@ button {
 }
 
 .backdrop.is-hidden {
-    transform: scale(0.1, 0.1);
+    transform: scale(0, 0);
     opacity: 0;
     pointer-events: none;
 }
@@ -792,7 +792,6 @@ button {
     background: var(--accessory-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-
 }
 
 .modal-button {
@@ -813,8 +812,6 @@ button {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
-
-
 }
 
 .icon-modal {
