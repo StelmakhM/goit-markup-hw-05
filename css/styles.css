@@ -580,13 +580,12 @@ button {
     height: 100%;
     background: var(--product-overlay-background);
     transform: translateY(100%);
-    transition: transform var(--cubic) 250ms;
+    opacity: 0;
+    transition: transform var(--cubic) 250ms, opacity var(--cubic) 250ms;
 
 }
 
 .product-overlay p {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
@@ -596,14 +595,13 @@ button {
 
 .product-list {
     gap: 30px;
-
     list-style: none;
     display: flex;
     flex-wrap: wrap;
 }
 
 .product-item {
-    background: #fff;
+    background: var(--accessory-color)
 }
 
 .product-link:hover,
@@ -616,6 +614,7 @@ button {
 .product-link:focus .product-overlay,
 .product-link:hover .product-overlay {
     transform: translateY(0);
+    opacity: 1;
 }
 
 .product-link {
